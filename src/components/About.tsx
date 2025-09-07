@@ -18,7 +18,7 @@ const About: React.FC = () => {
             <div className="relative">
               <div className="w-80 h-80 mx-auto bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 rounded-2xl flex items-center justify-center">
                 <div className="w-64 h-64 bg-slate-300 dark:bg-slate-600 rounded-xl flex items-center justify-center">
-                  <span className="text-slate-600 dark:text-slate-400 text-sm font-medium"><img src="src\images\my.jpg" alt="" /></span>
+                  <span className="text-slate-600 dark:text-slate-400 text-sm font-medium"><img src="images\my.jpg" alt="" /></span>
                 </div>
               </div>
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full opacity-20 animate-pulse"></div>

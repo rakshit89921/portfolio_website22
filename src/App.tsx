@@ -1,4 +1,3 @@
-import React from 'react';
 import { ThemeProvider } from './hooks/useTheme';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';

@@ -6,17 +6,19 @@ export interface Project {
   technologies: string[];
   liveUrl: string;
   sourceUrl: string;
+  imageUrl: string; // Added imageUrl
 }
 
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'E-Commerce Platform',
-    description: 'Modern e-commerce platform with seamless shopping experience and secure payment processing.',
+    title: 'Gym Website',
+    description: 'Transform your fitness journey with a modern gym platform offering seamless workout experiences and secure membership management.',
     category: 'Business',
     technologies: ['React', 'TypeScript', 'Stripe', 'Node.js'],
-    liveUrl: '#',
-    sourceUrl: '#'
+    liveUrl: 'https://myfitgym21.netlify.app/',
+    sourceUrl: '#',
+    imageUrl: '/images/gym.png' // Correct path for public folder
   },
   {
     id: '2',
@@ -25,7 +27,8 @@ export const projects: Project[] = [
     category: 'Dashboards',
     technologies: ['React', 'Chart.js', 'Firebase', 'Tailwind'],
     liveUrl: '#',
-    sourceUrl: '#'
+    sourceUrl: '#',
+    imageUrl: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80'
   },
   {
     id: '3',
@@ -34,7 +37,8 @@ export const projects: Project[] = [
     category: 'Landing Pages',
     technologies: ['Next.js', 'Framer Motion', 'Tailwind'],
     liveUrl: '#',
-    sourceUrl: '#'
+    sourceUrl: '#',
+    imageUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80'
   },
   {
     id: '4',
@@ -42,8 +46,9 @@ export const projects: Project[] = [
     description: 'Beautiful restaurant website with online menu and reservation system.',
     category: 'Business',
     technologies: ['React', 'Styled Components', 'Sanity CMS'],
-    liveUrl: '#',
-    sourceUrl: '#'
+    liveUrl: 'https://delhispice.netlify.app/',
+    sourceUrl: '#',
+    imageUrl: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80'
   },
   {
     id: '5',
@@ -52,33 +57,7 @@ export const projects: Project[] = [
     category: 'SaaS',
     technologies: ['React', 'Redux', 'Material-UI', 'Express'],
     liveUrl: '#',
-    sourceUrl: '#'
-  },
-  {
-    id: '6',
-    title: 'Creative Portfolio',
-    description: 'Artistic portfolio website for photographer with gallery and booking system.',
-    category: 'Landing Pages',
-    technologies: ['Gatsby', 'GraphQL', 'Netlify CMS'],
-    liveUrl: '#',
-    sourceUrl: '#'
-  },
-  {
-    id: '7',
-    title: 'Financial Dashboard',
-    description: 'Real-time financial analytics dashboard with advanced charting capabilities.',
-    category: 'Dashboards',
-    technologies: ['Vue.js', 'D3.js', 'Python', 'FastAPI'],
-    liveUrl: '#',
-    sourceUrl: '#'
-  },
-  {
-    id: '8',
-    title: 'Fitness App Landing',
-    description: 'Mobile-first landing page for fitness application with workout tracking features.',
-    category: 'Landing Pages',
-    technologies: ['React', 'GSAP', 'Tailwind', 'PWA'],
-    liveUrl: '#',
-    sourceUrl: '#'
+    sourceUrl: '#',
+    imageUrl: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80'
   }
 ];

@@ -19,14 +19,23 @@ const Contact: React.FC = () => {
     e.preventDefault();
     // Handle form submission here
     console.log('Form submitted:', formData);
+
+    fetch('http://localhost:5000/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    })
+    .then(res => res.json())
+    .then(data => console.log(data));
+
     // Reset form
     setFormData({ name: '', email: '', message: '' });
   };
 
   const socialLinks = [
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Instagram, href: '#', label: 'Instagram' }
+    { icon: Linkedin, href: 'www.linkedin.com/in/rakshit-girase-837189327', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/rakshit89921', label: 'GitHub' },
+    { icon: Instagram, href: 'https://www.instagram.com/rakshit_girase?igsh=aWNscTZiaWRjOGk4', label: 'Instagram' }
   ];
 
   return (

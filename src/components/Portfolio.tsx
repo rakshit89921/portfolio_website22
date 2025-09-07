@@ -50,11 +50,14 @@ const Portfolio: React.FC = () => {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="relative overflow-hidden bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 h-48">
-                <div className="absolute inset-4 bg-slate-200 dark:bg-slate-700 rounded-lg flex items-center justify-center">
-                  <span className="text-slate-500 dark:text-slate-400 text-sm">Project Screenshot</span>
-                </div>
+                <img
+                  src={project.imageUrl}
+                  alt={project.title}
+                  className="absolute inset-4 w-[calc(100%-2rem)] h-[calc(100%-2rem)] object-cover rounded-lg"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
+              
               
               <div className="p-6">
                 <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
