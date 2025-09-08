@@ -3,7 +3,7 @@ import { MessageCircle } from 'lucide-react';
 
 const FloatingContact: React.FC = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/1234567890?text=Hello! I\'d like to discuss a project.', '_blank');
+    window.open('https://wa.me/8999926920?text=Hello! I\'d like to discuss a project.', '_blank');
   };
 
   return (
